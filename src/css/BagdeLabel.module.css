@@ -1,0 +1,12 @@
+.label {
+    line-height: 17.05px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}

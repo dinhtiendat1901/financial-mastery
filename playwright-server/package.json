@@ -1,0 +1,31 @@
+{
+  "name": "playwright-server",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "prebuild": "tsc",
+    "build": "tsc && pkg . --targets node16-linux-x64,node16-macos-x64,node16-win-x64 --out-path dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "lodash": "^4.17.21",
+    "playwright": "^1.51.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@playwright/browser-chromium": "^1.51.1",
+    "@types/express": "^5.0.1",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.13.14",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
