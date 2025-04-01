@@ -7,7 +7,8 @@
     "start": "ts-node src/index.ts",
     "dev": "nodemon --exec ts-node src/index.ts",
     "prebuild": "tsc",
-    "build": "tsc && pkg . --targets node16-linux-x64,node16-macos-x64,node16-win-x64 --out-path dist"
+    "build": "tsc && pkg . --targets node16-linux-x64,node16-macos-x64,node16-win-x64 --out-path dist",
+    "test": "ts-node convert-class.ts"
   },
   "keywords": [],
   "author": "",

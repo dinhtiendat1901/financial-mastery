@@ -1,4 +1,4 @@
 ### Run Profile
-GET {{host}}/run-profile
+GET {{host}}/get_all_payment
 
 ###

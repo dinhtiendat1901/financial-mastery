@@ -1,9 +1,13 @@
 import {app} from "./socket";
-import {runProfile} from "./service/profile-service";
+import {getAllPayment} from "./controller/payment-controller";
+import {openBrowser} from "./controller/browser-controller";
 
 
-app.get('/run-profile', async (_, res): Promise<void> => {
-    await runProfile();
+app.get('/get_all_payment', async (_, res): Promise<void> => {
+    res.send(await getAllPayment());
+});
 
-    res.send('Run Profile Successfully!');
+app.get('/open_browser', async (_, res): Promise<void> => {
+    await openBrowser()
+    res.send('Login successfully');
 });

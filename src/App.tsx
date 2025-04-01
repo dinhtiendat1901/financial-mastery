@@ -7,6 +7,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import RootPage from "./page/RootPage.tsx";
 import classes from "./css/Label.module.css"
 import StudentPage from "./page/StudentPage.tsx";
+import PaymentPage from "./page/PaymentPage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <StudentPage/>
+            },
+            {
+                path: 'payment',
+                element: <PaymentPage/>
             }
         ]
     }

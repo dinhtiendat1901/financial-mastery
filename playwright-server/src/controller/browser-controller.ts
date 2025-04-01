@@ -1,6 +1,6 @@
 import {chromium} from "playwright";
 
-async function runProfile() {
+export async function openBrowser() {
     await chromium.launchPersistentContext('/data', {
         headless: false,
         viewport: null,
@@ -9,6 +9,3 @@ async function runProfile() {
         ],
     });
 }
-
-
-export {runProfile}

@@ -1,5 +1,5 @@
 .navbar {
-    height: auto;
+    height: inherit;
     width: auto;
     padding: var(--mantine-spacing-md);
     display: flex;
