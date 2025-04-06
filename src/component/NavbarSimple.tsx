@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {Button, Code, Group, Text} from '@mantine/core';
-import {IconBrandChrome, IconWallet} from '@tabler/icons-react';
+import {IconBrandChrome, IconCash, IconWallet} from '@tabler/icons-react';
 
 import classes from '../css/NavbarSimple.module.css';
 import {Link} from "react-router-dom";
@@ -10,7 +10,7 @@ import {Payment} from "../store/payment-slice.ts";
 const data = [
     {link: '/', label: 'Students', icon: IconBrandChrome},
     {link: '/payment', label: 'Payments', icon: IconWallet},
-
+    {link: '/balance', label: 'Balances', icon: IconCash}
 ];
 
 export default function NavbarSimple() {

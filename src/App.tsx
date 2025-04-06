@@ -8,6 +8,7 @@ import RootPage from "./page/RootPage.tsx";
 import classes from "./css/Label.module.css"
 import StudentPage from "./page/StudentPage.tsx";
 import PaymentPage from "./page/PaymentPage.tsx";
+import BalancePage from "./page/BalancePage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: 'payment',
                 element: <PaymentPage/>
+            },
+            {
+                path: 'balance',
+                element: <BalancePage/>
             }
         ]
     }

@@ -3,7 +3,7 @@ import {Payment} from "../controller/payment-controller";
 
 
 export async function getListPaymentPerPage(page: Page): Promise<Payment[]> {
-    await page.locator('.inline-flex.items-center.justify-center.whitespace-nowrap.text-sm.font-medium.ring-offset-background.transition-colors.text-primary-brand.h-10.rounded-md.border-2.border-primary-border.p-0.w-10.cursor-pointer').first().click()
+    await page.locator('.inline-flex.items-center.justify-center.whitespace-nowrap.text-sm.font-medium.ring-offset-background.transition-colors.text-primary-brand.h-10.rounded-md.border-2.border-primary-border.p-0.w-10.cursor-pointer').last().click()
     await page.waitForTimeout(1000)
     return await getListPayment(page)
 }
